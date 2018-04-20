@@ -1,0 +1,35 @@
+Copying files over the network
+SCP - Secure Copy 
+SFTP -SSH file transfer protocol
+puTTY Secure Copy Client - pscp.exe
+puTTY Secure File Transfer Client -psftp.exe
+
+
+Graphical SCP/SFTP Clients
+Cyberduc
+FileZilla
+WinSCP
+
+scp/sftp command line utlities
+scp source destination - Copy source to destination
+sftp host - Start a secure file transfer session with host
+sftp jason@host
+ftp host Start file transfer session with host
+
+
+Accessing SFTP
+$sftp steve@192.168.24.46
+sftp>pwd-> displays current working directory
+sftp>lpwd-> local working directory
+sftp>ls  -> diplay list of items
+sftp>put dir3/file1 
+sftp>quit 
+
+
+Accessing SCP
+$ scp file1.txt steve@192.168.24.46:/tmp/
+
+use ssh on kali linux machine to access files in ubuntu server
+ssh steve@192.168.24.46
+
+

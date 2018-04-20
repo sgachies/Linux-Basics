@@ -1,0 +1,27 @@
+Getting access to a linux Systems
+
+Terminal enter data and display output
+Used to interact with your local computer if you are running linux as your primary desktop and using a grapical interface you could start up a terminal emulator application inorder to interact with command line interface
+
+
+Ways to get access to linux
+1.Web Bases Command Line Access-simpleshell.com allows you to connect to a linux server.
+ Each session is limited to 15 minutes.
+
+2.Web Hosting Shell Accounts Most hosting providers use linux to run there web servers.
+Check for the web hosting documentaion check for ssh , shell access
+
+3.VPS-Virtual Private Server or Cloud Server /Cloud Instance - Runs Complete OS and not shared.
+Cloud server is also called an instance means deployed virtaul server complete OS.
+Difference between cloud providers and traditional is 
+Cloud servers /cloud instances can be programamatically be deployed you can create a  software that can start cloud instances or stop
+
+
+4.Run Live Linux Distro - they dont write to your Hard disk / not install on Machine
+Fedora, puppy linux, knoppix, ubuntu dont modify your system in any way.
+
+
+
+
+
+

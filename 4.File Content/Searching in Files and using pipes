@@ -1,0 +1,88 @@
+Searching in Files and using pipes
+
+The grep Command
+grep -> Display lines matching a pattern
+$ grep pattern files
+Example 
+$ grep sales sales.data
+
+grep Options
+-i Perform a search, ignore case
+-c Count the number of occurences in a file
+-n Precede output with line numbers. Displays line content details the match 
+-v Invert match. Print Lines that dont match
+
+
+The file command
+$file file_name -> Display the file type
+
+$file data
+data: ASCII text
+
+$file * 
+dir1:  directory
+dir2:  directory
+files.txt ASCII text
+
+
+Searching for Text in Binary Files
+Strings - Display printable strings.
+pipe symbol | - command-output | command-input
+cat file | grep pattern
+
+The cut command
+$cut [file] -> Cut out selected portions of file. If file is omitted use stndard input
+
+Example
+$strings music.mp3 | grep -i john
+$strings file1.txt | grep -i sales
+$strings file1.txt | grep -i sales | head -1 | cut -d'' -f2
+
+
+Searching and pipe example
+-Find all users named "bob" in /etc/passwd
+-Print account account name and real name
+-Print in alphabetical order by account name
+-Print in a tabular format
+
+
+
+
+$grep bob /etc/passwd
+$grep bob /etc/passwd | cut -d: -f1,5
+-d ->option deleimeter using semi colon as variable [ : ] or any other letter or character in the file
+f1 ->field 1
+f5 ->field 5
+$grep bob /etc/passwd | cut -d: -f1,5 | sort
+Sort  -> Sorting alphabetically
+
+$grep bob /etc/passwd | cut -d: -f1,5 | tr ":" ""
+":" "" -> truncates semicolon to an empty space
+
+$grep bob /etc/passwd | cut -d: -f1,5 | column -t
+column -t -> Table format
+
+
+
+Piping Outout to a paper
+-more
+-less
+$cat /etc/passwd | less
+$cat /etc/passwd | more
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

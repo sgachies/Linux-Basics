@@ -1,0 +1,5 @@
+Basic linux commands
+
+$ date -Show date
+$ cal  -Show Calc or $ cal -y or $ $ man cal 
+$ pwd  - shows the current directory 

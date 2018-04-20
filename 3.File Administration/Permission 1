@@ -1,0 +1,93 @@
+Permission 1
+
+$ ls -l
+-rw-rw-r-- 1 steve steve 80 Oct 24 13:19 sales.data
+
+symbol Type
+-      Regular File
+d      Directory
+|      symbolic link
+
+
+
+Permission    File                             - Directories            
+r Read      - Allows a file to be read         - Allows file names in the directory to be read
+w Write     - Allows a file to be modified     - Allows entries to be modified within the directory 
+x Execute   - Allows the execution of a file   - Allow access to contents and metadata for entries
+
+Permission Categories
+Symbol Category
+u		User
+g       Group
+O       Other
+a       All
+
+Groups
+
+-Every users is in at least one group
+-Users can belong to many group
+-Groups are used to organize users
+-The [ groups ] command displays a user's groups
+-You can also use [ id -Gn ]
+
+
+Secret Decoder
+
+-rw-r--r--
+Type  -
+User  rw-
+Group r--
+Other r--
+
+Changing Permission
+Item    Meaning
+chmod   Change mode command
+ugoa    User category user,group, other, all
++-=     Add, subtract, or set permission
+rwx		Read, Write, Execute
+
+chmod u+x
+chmod a=r equal sign sets all to that permission i.e right.
+
+
+Numeric Bases Permission
+Based in binary set t0 1 or 0
+In Permission order has meaning
+
+r w x
+0 0 0 value for off
+1 1 1 Binary Value for on
+4 2 1 Based 10 value for on
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

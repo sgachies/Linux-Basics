@@ -1,0 +1,58 @@
+Switching Users and Running Commands
+
+su ->[username] Change user ID or become superuser
+-  ->A hyphen is used to provide an environment similar to what the user would expect had the user    logged in directly
+-c -> command specify a command to be executed 
+
+who am i ?
+
+whoami Display the effective username
+
+Example
+steve a/c
+~$export TEST=1
+~$echo $TEST
+
+~$su -c 'echo $ORACLE_HOME' - oracle
+The hyphen above enables us to use the oracles environment
+
+Sudo - Super User Do
+sudo - Execute a command as another user, typically the superuser
+It is commonly used to install, start, stop application that require root priveleges.
+Advantages of using sudo over the su commands is that you dont need to know other password of the other user. These can eliminate some issues that arise from using shared password and generic accounts
+When you execute the sudo command you are prompted for your password if the sudo configuration permits that access then that command is  executed.
+The sudo configuration is typically controlled by the systems administrator and requires root access to change off course on your personal system you have access to the root account and you are effectively the system administrator as well .
+
+Using sudo 
+sudo -l List avilable commands
+sudo command Run command as root 
+sudo -u root Command same as above
+sudo -u user Command Run as user
+
+Using Sudo
+sudo su              ->Switch to the superuser account
+sudo su -            ->Switch to the superuser account with root's environment
+sudo su - username   ->Switch to the username account
+sudo -s  			 ->Start a shell
+sudo -u root -s      ->Same as sudo -s
+sudo -u user -s      ->Start a shell as User
+
+Changing the sudo Configuration
+visudo edit the /etc/sidoers file
+
+Sudoers Format
+userhost=(users) [NOPASSWD:]commands
+
+adminuser ALL=(ALL) NOPASSWD:ALL
+steve linuxsvr=(root)/etc/init.d/oracle
+
+
+
+
+
+
+
+
+
+
+

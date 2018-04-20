@@ -1,0 +1,34 @@
+Shell - Default interface to linux .
+A program that accepts your commands and executes those commands.Also Command line interpreter.
+
+Shell propmts can vary greatly in apperance
+
+Command Line Interface VS GUI
+
+The cmd line is more powerful.
+There will always be comman line.
+Server distributions dont include GUI.
+Desktop distributions have GUIs and CLIs.
+
+The prompt -When a shell is started it shows a prompt.Shell prompt shows useful information.
+$ -> indicating using it as a normal user
+# -> indicating using it as a root user
+~ -> tilder is a short way of showing home directory. Used by itself shows represent home directory or currents home directory that you are using.
+Tilder Expansion
+~jason = /home/jason
+~pat = /home/pat
+~root = /root
+~ftp = /srv/ftp
+
+
+Root, the superuser
+
+The root account on linux system is similar to an administrator account on windows system.
+Root is all powerfulNormal accounts can only do a subset of the things root can do.
+Root access is typically restricted to system administrators.
+Root access may be required to install start or stop an application.
+Day to day activities will be performed usig a normal account.
+
+How to access the shell 
+
+What is the superuser account

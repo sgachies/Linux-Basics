@@ -1,0 +1,11 @@
+
+The Vi editor
+Has advanced and powerful features
+Not intutive
+Harder to learn than nano
+Requires a time investment
+
+vi [file] Edit file
+vim [file] Same as vi, but more features.
+view [file] starts vim in read only mode
+

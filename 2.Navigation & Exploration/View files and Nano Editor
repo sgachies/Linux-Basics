@@ -1,0 +1,25 @@
+View files and Nano Editor
+
+Displaying the contents of files
+
+Cat File   ->Display the contents of file
+more file  ->Browse through a text file
+less file  ->More features than more
+head file  ->Output the begginning (or top) portion of file
+tail file -> Output the ending (or bottom) portion of file. Display only 10 lines by default.Change this behaviour with -n 
+n=number of lines
+tail- 15 files.txt
+tail -f file follow the file
+Display data as it is being written to the file
+
+
+Nano Editor
+Simple editor
+Easy to learn
+Not advanced and vi or emacs
+Use pico instead
+Save file ctrl o and press enter
+
+
+
+

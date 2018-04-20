@@ -1,0 +1,40 @@
+Aliases
+
+-Shortcuts
+-Use for long commands
+-Use for commands you type often
+
+Creating Alises
+
+alias [name[=value]]
+
+
+list or create aliases.
+username=value to create a new alias
+
+Aliases
+-Fix typos
+$alias grpe='grep'
+-Make Linux behave like another OS
+$alias cls='clear'
+
+Removing Aliases
+$ unalias name - Remove the "name" alias
+$ unalias -a Remove all aliases
+
+
+Persisting Aliases
+-Add alises to your personal initialization files like .bash_profile or .profile
+-The downside of creating several aliases is that on system that doesnt have your alises you might feel lost if feel you want to work effectively in any linux system. That you have access to keep your alise uses to a minimum
+-Another way to handle the situation is to Copy your configuration file to each linux system that you going to work on.
+
+
+
+
+
+
+
+
+
+
+

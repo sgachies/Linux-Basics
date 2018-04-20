@@ -1,0 +1,84 @@
+Background and History of Linux
+_______________________________
+
+Linux is an Operating system collection of softwares that manages hardware resources and provides an environment where application can work.
+
+The Operating systems allows applications to store information, send documents to printers and interact with users and others things
+ 
+
+Linux is also kernel.Its the core and heart of the operating system. Its the layer that sits between the hardware and application.
+
+Its the intermediary between software and hardware. However to have a useful OS you need other components in addition to the Kernel can inculude system libraries, GUI ,Email Utilities, browsers and other programs.
+
+Linus Trovalds Created Linux when he was a student  at the university of Helsinki studing computer Science and early 1991 he purchased and IBM compatible PC that came with MS DOS OS.
+First Version Released 1994.
+
+FOSS (Free/Open Source Software).
+It has led to the rise and development of Linux distribution.
+The source code is free but in some cases the distribution is not free.The binary the compiled code, binary not free you have to pay a licence to run Redhat Enterprise Linux, however Redhat relaeses there source code for any one to download.
+
+Unix is not Linux derivitive it was rwritten from scratch, however, the many of the commands in Linux are found on unix.
+
+Linux Distribution is the Linux Kernel and a collection software that together create an Operating System each distribution has its own goals and areas of focus.
+
+Your choice of distribuion will depend on what you are trying to accomplish.
+
+Many distributions available to choose from that are commercial and that are backed by coperations and you can buy support from them.
+There are also non commercial Linux distribution and are maitained by community of voulnteers.
+
+Linux distribution that are designed for server, desktop, focused on research and science, others for multimedia production
+
+Linux Distribuion include
+_________________________
+Distrowatch.com
+Redhat Enterprise Linux (RHEL)
+Fedora
+Ubuntu
+Debian
+SuSE LInux Enterprise Server (SLES)
+OpenSuSE
+
+
+Reasons to Run Linux
+____________________
+
+-It runs on many hardware platform
+-Dedicated networking devices, Phones, PCs, Super Computers
+Proprietry Unix OS only run on there hardware from their company hpux runs on hp servers,
+IX run on IBM servers.Linux can run on HP, IBM and other servers
+-Linux was developed on PC hardware using intel processors over time linux has been ported on to more platforms than any other OS .
+-Small footprint enables it to run on old systems and embedded systems
+-Linux is stable, reliable and secure
+-Great for servers can countinously run without  down time has been used for server applications used to host websites act as file servers and run db softwares.
+-FOSS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What linux is and what distributions are
+Places to practice your skills
+How to install linux
+Ways to connect to linux systems

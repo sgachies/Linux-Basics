@@ -1,0 +1,45 @@
+Comparing Files
+
+diff file1 file2 comparing two files
+sdiff file1 file2 side by side comparison
+vimdiff file1 file2 Highlight differences in vim
+
+1.diff output
+
+$diff file1 file2
+3c3
+...
+
+LineNumFile1-Action-LineNumFile2
+Action = (A)dd (C)hange (D)elete
+
+Example
+$diff file1 file2
+3c3
+< this is a line in a file.
+---
+> this is a line in a file!
+
+< Line from file1
+> Line from file2
+
+2. sdiff output
+
+$diff file1 file2
+line in file1    |  line in file2
+				 >  more in file2
+
+				 	| Differing lines
+				 	< Line from file1
+				 	> Line from file
+3. vimdiff  
+Both files will be displayed in separate windows 
+ctrl -w w  Go to next window 
+[ :q   ]   Quit(close current window)
+[ :qa  ] Quit all (close both files)
+[ :qa! ] Force quit all
+
+
+
+
+

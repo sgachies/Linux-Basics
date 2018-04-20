@@ -1,0 +1,26 @@
+Filesystem Hierarchy
+
+/- (root directory)
+|
+|- /bin
+|
+|- /etc
+|
+|- /home
+|
+|- /opt
+|
+|- /tmp
+|
+|- /usr
+|
+|- /var
+|
+
+
+
+N/B 
+Absolute path - Path to a file or directory which starts from the root
+/home/mike/file1/pic.jpg
+Relative path - Path to a file or directory which doesnt starts from the root
+/file1/pic.jpg

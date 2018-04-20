@@ -1,0 +1,36 @@
+1 Introduction
+Background and history of linux
+What linux is and what distributions are
+Places to practice your skills
+How to install linux
+Ways to connect to linux systems
+
+2 Navigation and Exploration
+Linux file system hierarchy
+Te command line interface
+Getting elp, finding documentation
+Root , the super user
+Linux directory and navigating
+
+3. File Administration
+How to read, set and change fle and directory permissions.
+Sharing files and directories with others
+Finding files and directories
+Viewing and editing files
+
+4. File Content
+Delete, copy, move and rename operation
+Input, output and redirection
+Searching for data
+Customizing your prompt and aliases
+Transferring files over the network
+
+
+5. Process and Job Control
+Process and job control
+Schedule and automate jobs
+Switching users
+Command line effieciency tips
+Software package management
+
+

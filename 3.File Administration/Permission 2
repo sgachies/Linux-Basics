@@ -1,0 +1,44 @@
+Permission 2
+
+Working with Groups
+
+-New files belong to your primary group
+-The [chgrp]
+
+
+Directory Permission 
+-Permission on a directory can affect the files in the directory
+-If the file Permissions look correc, start checking directory Permissions.
+-Work your way up to the root.
+- $ chmod 400 [directory name]makes the directory not accessible
+- $ chmod 500 [directory name]makes the directory accessible
+
+File Creation Mask
+File creation mask determines default permissions.
+If no mask were used permission would be 
+-777 for directories
+-666 for files
+
+The Umask Command
+umask [-S] [mode]
+-Sets the file creation mask to mode, if given
+-Use -S to for symbolic notation
+-umask -S command displays symbolic mode
+
+Common umask modes
+002
+022
+077
+007
+
+Special Modes
+-umask 0022 is the same as umask 022
+-chmod 0644 is the same as chmod 644
+-The Special modes are
+*setuid
+*setgid
+*sticky
+
+
+chown - changing ownership of directory
+

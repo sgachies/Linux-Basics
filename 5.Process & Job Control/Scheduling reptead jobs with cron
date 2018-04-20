@@ -1,0 +1,60 @@
+Scheduling reptead jobs with cron
+
+Cron Services
+Crontab format
+crontab command
+
+-Cron -A time based job scheduling service
+-Crontab - A program to create, read , update , and delete your job schedules
+-Use corn to scehdule and automate tasks
+
+
+Crontab Format
+-Crontab is configuration file that defines when commands are to be executed by a cron
+-Each line on cron table represent a job and that contains two pieces of information 1. when to run and 2. to what to run.
+-The time speification consist of five fields as below
+*****Command
+|||||
+||||+-------------Day of the Week    (0-6)
+|||+--------------Month of the year  (1-12)
+||+---------------Day of the Month   (1-31)
+|+----------------Hours        		 (0-23)
++-----------------Minutes            (0-59)
+
+Example of crontab entry
+#Run every Monday at 07:00am
+0 7 * * 1 /opt/sales/bin/weekly-report
+| | | | |
+| | | | +-------------Day of the Week  (0-6)
+| | | +--------------Month of the year (1-12)
+| | +---------------Day of the Month   (1-31)
+| +----------------Hours        	   (0-23)
++-----------------Minutes              (0-59)
+
+Redirecting Output
+#Run at 02:00 every day nd 
+#Send output to a log file
+0 2 * * * /root/backupdb > /tmp/db.log 2>&1
+
+
+Crontab Shortcut
+@yearly   0 0 1 1 *
+@annualy  0 0 1 1 *
+@moanthly 0 0 1 * *
+@weekly   0 0 * * 0
+@daily    0 0 * * *
+@midnight 0 0 * * *
+
+
+Using the Crontb Command
+crontab file install a new crontab from file
+crontab -l List your cron jobs
+crontab -e Edit your cron jobs
+crontab -r Remove all of your cron jobs
+
+
+$crontab my-cron - Adding file cron job
+$crontab -l -> list all crons 
+
+
+

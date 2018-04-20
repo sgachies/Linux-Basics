@@ -1,0 +1,62 @@
+Shell History
+_____________
+
+Simply put, the shell is a program that takes commands from the keyboard and gives them to the operating system to perform. In the old days, it was the only user interface available on a Unix-like system such as Linux. Nowadays, we have graphical user interfaces (GUIs) in addition to command line interfaces (CLIs) such as the shell.
+
+Properties of a shell
+ -Executed commands are added to the history
+ -Shell can be displayed and recalled
+ -Shell history is stored in memory and on disk
+
+Shell directory
+ ~/.bash_history
+ ~/.history
+ ~/.histfile
+
+History Command
+ history - Display the shell history
+ HISTSIZE Controls the number of commands to retian in history
+
+ You can place the below commands in your personal initialization file
+ export HISTSIZE=1000
+
+ !Syntax
+ !N Repeat Command line number N
+ !! Repeat the previous command line
+ !string Repeat the most recent command starting with "string"
+ !:N <Event> <Separtator> <word>
+ ! Represents a command line (or event)
+ !=The most recent command line
+ !=!!
+ :N Represents a word on the command line.
+ 0=command, 1=first argument, etc.
+
+Tab Completion
+Tab autocompletion
+-commands
+-Files, directories, paths
+-Environment Variables
+-Username(~)
+
+Examples
+
+$ls files.txt sorted_files.txt notes.txt
+$echo !:2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

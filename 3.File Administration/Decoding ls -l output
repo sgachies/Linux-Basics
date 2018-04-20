@@ -1,0 +1,60 @@
+Decoding ls -l output
+
+steve@linuxsrv:~ $ ls -l
+
+-rw-rw-r-- 1 steve steve 80 oct 24 13:19 sales.data
+
+Permissions -> -rw-rw-r--
+Number of Links -> 1 
+Owner Name -> steve 
+Group Name -> steve
+Number of bytes in the file ->  80 
+Last modificaion time -> oct 24 13:19 
+File Name -> sales.data
+
+
+1.Listing All Files, Including Hidden Files
+-Hidden files begins with a period- sometimes called the "dot files"
+Hidden files are not displayed by default.
+To show hidden files with ls, use ls -a
+Command options can be combined
+ls -l -a same as ls -la & ls -al
+
+2.Listing Files by Type
+Use ls -F to reveal file types
+/ Directory
+@ Link
+* Executable
+
+Symbolic Links
+-A link is a points to the actual file or directory
+-Use the link as if it were the file
+-A link can be used to create a shortcut
+  Use for long file or directory names
+  use to indicate the current version of software
+
+ ls -F -> shows the file type
+
+
+ 3. Listing Files by Time and in reverse 
+ ls options
+ -a -> List all files, including hidden files
+ -t -> List files by time, most recent
+ -r -> Reverse the order
+ -R -> List files recursively
+ -d -> List directory name, not contents
+--color -> colorize the output
+ ls -latr -> Long listing including all files   reverse sorted by time
+
+ 
+  tree -d -> Check directory structure 
+ tree -Cd -> Check directory structure and give visual output
+
+ Spaces in File names
+
+
+
+
+
+
+

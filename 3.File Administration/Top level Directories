@@ -1,0 +1,24 @@
+Top level Directories
+/boot - files needed to boot the OS
+/cdrom - Mount point for CD-ROMs.
+/media - Used to mount removable media like CD-ROMS.
+/cgroup - Control Groups hierarchy
+/dev - Device files, typically controlled by the OS and System administrators.
+/mnt Used to mountextrnal file systems
+/proc - Provide info about running processes.
+/selinux - Used to display info about SELinux
+/srv - Contains data which is servered by the systems
+/srv/www web Server files
+/sys Used to display and sometimes configure the devices known to the Linux Kernel.
+
+
+Application Directory Structures
+
+/usr/local/crashplan/bin
+/usr/local/crashplan/etc
+/usr/local/crashplan/lib
+/usr/local/crashplan/log
+
+
+
+

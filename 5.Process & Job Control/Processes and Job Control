@@ -1,0 +1,76 @@
+Processes and Job Control
+
+
+List running processes
+Foreground vs background processes
+Launch background processes
+Kill Processes
+
+
+ps ->Display process status
+
+ps options
+-e Everything , all processes
+-f Full format listing
+-u username Display username's processes
+-p pid  Display information for PID
+
+Common ps Commands
+ps -e          Display all processes
+ps -ef         Display all processes, full
+ps -eH         Display a process tree
+ps -e --forest Display a process tree
+ps -u username Display user's processes
+
+Examples
+$ps -ef | less
+uid  -> User ID proces user is running at 
+PID  -> Process ID
+PPID -> Parent Process ID
+
+
+$ps -fu steve -> Get full process of the of the user
+$ps -ef --forest
+$pstree
+$top
+$htop
+
+Bckground and foreground processes
+command & start command in background
+ctrl-c Kill the foreground processes
+ctrl-z Suspend the background processes
+
+
+bg [%num] Background a suspended process
+fg [%num] Foreground a background process
+kill Kill a process by job number orr PID
+job [%num] List jobs
+
+
+Two ways of killing a process
+
+ctrl-c Kills the foreground proc
+kill [-sig] pid send a signal to a process
+kill -l Display a list of signals
+
+
+kill 123
+kill -15 123
+kill -TERM 123 kill -9 123
+ 
+Examples
+$./long-running-program &
+[1] 2173 job number -> [1] 2173 -> PID
+$job %1 
+ps -p 2373
+jobs %1
+fg 
+jobs
+bg
+
+
+
+
+
+
+

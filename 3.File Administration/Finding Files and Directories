@@ -1,0 +1,54 @@
+Finding Files and Directories
+
+Find [path] [expression]
+
+Recursively finds files in path that match expression. If no arguments are supplied if find all files in the current directory.
+
+
+Find options
+-name pattern find files and directories that match pattern.
+-iname pattern Like -name, but ignores case.
+-ls Performs an ls on each of the found items.
+-mtime days Finds files that are old
+-size num Finds file that are of size num
+-newer file Finds files that are newer than file.
+-exec command {} \;
+Run Command against all the files that are found
+
+
+Examples
+:~$ find /sbin -iname makedev -> iname mean searches and ignores case sensitive name
+:~$ find /sbin -iname *v -> anything that ends with v
+:~$ find . -mtime +10 -mtime -13
+:~$ find . -name S* -ls
+:~$ find . -exec file {} \; -> Find everything in the current directory going to execute the file command aganist all the searches 
+:~$ file cat ->command tells what kind of files it is.
+
+A Fast Find-Locate
+Locate is faster than find command looks at the path you gave it and evaluates each and every file and directory and determines if that matches you search pattern or not and then returns those results.
+
+Locate works of an index typically the index is rebuilt everyday instead of evaluating each and every files that matches the pattern locate just does a look up index.The results are not in real time there is a lag between time the index is created and time that your run the locate command.
+
+locate - Pattern
+-List files that match pattern
+-Faster than the find command
+-Queries an index.
+-Results are not in real time
+-May not be enabled on all systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

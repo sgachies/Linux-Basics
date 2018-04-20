@@ -1,0 +1,127 @@
+Packages
+A collection of files that make up an application 
+It contains data/metadata about the application 
+
+-Package description
+-version
+-Dependencies
+
+Package Manager
+-installs, Upgrades and removes packages
+-Manages dependancies
+-Keep track of what is installed
+
+
+The package manager uses the metadata to auomatically install any required dependancies 
+
+
+Installng software on RPM Distros
+RPM Redhat Package Manager
+-Redhat
+-CentOS
+-Fedora
+-Oracle linux
+-Scientfic linux
+
+
+Yum 
+The Yum command line utility is a package manager
+
+Yum search string ->search for string
+yum info [package] ->Display info
+yum install [-y] package ->install package
+yum remove package   ->remove package
+
+
+
+rpm 
+rpm -qa list all installed packages
+rpm -qf /pathto/file List the file's package
+
+rpm -ql package list packages files
+rpm -ivh package.rpm install package
+rpm -e package Erase (unistall) package
+
+Example
+install yum search inkscape
+yum info inkscape-docs
+yum info inkscape  -> Graphics editor
+su - -> root user
+yum install inkscape
+yum install -y gimp
+yum remove gimp -y
+
+
+Install software not included in the package manager
+Downloade directly from the site
+rpm -q
+rpm -qa | sort | less
+
+
+Installing software on DEB Distros
+-Debian
+-Linux mint
+-Ubuntu
+
+APT _ Advanced Packaging TOol
+apt -cache search string Search for string.
+apt-get install [-y] package install package.
+
+apt-get remove package Remove package, leaving configuration
+apt-get purge package Remove package, deleting configuration
+apt-cache Show package Display Information about package 
+
+dpkg -l - list installed packages
+dpkg -S /path/to/file List file's package.
+dpkg -L package List all files in package.
+dpkg -i package.deb Install package.
+
+Example 
+apt-cache search inkscape
+sudo apt-get install inkscape 
+
+Summary 
+RPM
+-yum
+-rpm
+Deb
+-apt
+-dpkg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

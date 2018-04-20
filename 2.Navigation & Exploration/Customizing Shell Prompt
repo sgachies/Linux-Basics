@@ -1,0 +1,49 @@
+Customizing the shell prompt
+-Use an environment variable to customize
+-Bash, ksh and zsh use $PS1
+-Csh, tcsh and zsh use $prompt
+
+bash is the default prompt for most linux users
+Customizing the prompt with PS1
+
+\d Date in "Weekday Month Date" Format "Tue May 26"
+\h Hostname upto the first period
+\H Hostname
+\n Newline
+\t Current time in 24- hours HH:MM:SS format
+\T Current time in 12- hours HH:MM:SS format
+\@ Current time in 12- hours am/pm format
+\A Current time in 24- hours HH:MM format
+\u username of the current user
+\w current working directory
+\W Basename of the current working directory
+\$ If the effective UID is 0, a#, otherwise a $
+
+
+Example
+Persist PS1 changes
+$echo 'export PS1=" [\u@\h \w]\$ "' >> ~/.bash_profile
+Personal initiliation files are referred to as dot files or period
+$echo $PS1 
+$PS1 = "\u@\h \$ "
+$PS1 = "<\t \u@\h \w>\$" ->adding time to our propmpt and working directorty and ~ to show home directory
+$PS1 = "\d \t \h \W>\$ " -> Shows  date time hours format Base name for the current working dir
+
+Custom single line prompt
+$vi .profile ->Persist changes in login put this in personalization file
+add this code to the .profile or bash_profile file
+#my custom prompt
+export PS1= "[persist \u@\h \w]\$ "
+Exit :wq 
+
+Multi line Prompt
+$PS1="\t\n[\h \w]\$ " 
+output
+line 1 with current time
+line 2 with normal user dir line
+
+
+
+
+
+

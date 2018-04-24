@@ -1,0 +1,10 @@
+Installing Application
+
+Redhut -RPM
+
+Debian -DPKG
+
+Ubuntu Debian -APT
+
+apt-get:Used to install packages
+apt-cache: Used for managing and searching APT repositories
